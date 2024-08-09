@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio for Marc T Hanger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Marc T Hanger</a>
+            <a class="navbar-brand" href="#">Portfolio for Marc T Hanger</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,33 +37,66 @@
         </div>
     </nav>
 
-    <section id="capabilities">
-        <h2>Agile</h2>
+    <div class="container my-5">
+    <section id="capabilities" class="mb-5">
+        <h2>Capabilities</h2>
         <div class="experience">
-            <picture>
-                <source srcset="images/agile_w_628.jpg" media="(max-width: 768px)">
-                <source srcset="images/agile_w_1200.jpg" media="(min-width: 769px)">
-                <img src="images/agile_w_1200.jpg" alt="Agile">
-            </picture>
-            <div class="description">
-                <p>
-                    <ul>
-                        <li>More than eight years of experience working within agile development and leading offshore teams.</li>
-                        <li>Seemlessly integrate or lead your daily scrum calls and work with agile tools such as git and jira, and confluence.</li>
-                        <li>Experience with unit testing tools such as jest and cypress.</li>
-                    </ul>
-                </p>
+            <h3>Agile</h3>
+            <div class="row">
+                <div class="col-12 col-md-8 order-md-2">
+                    <picture>
+                        <source srcset="images/agile_w_628.jpg" media="(max-width: 768px)">
+                        <source srcset="images/agile_w_1200.jpg" media="(min-width: 769px)">
+                        <img src="images/agile_w_1200.jpg" alt="Agile">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4 order-md-1">
+                    <div class="description">
+                        <ul>
+                            <li>More than eight years of experience working within agile methodologies and leading on-shore, near-shore, and off-shore teams.</li>
+                            <li>Experienced with standard agile tools such as Git, Jira, and Confluence.</li>
+                            <li>Leading and participating in agile ceremonies such as story refinement, pointing, pull request reviews, daily scrum standups, and retrospectives.</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <h2>Analytics</h2>
+
+        <h3>Analytics</h3>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <picture>
+                    <source srcset="images/analytics.png" media="(max-width: 768px)">
+                    <source srcset="images/analytics.png" media="(min-width: 769px)">
+                    <img src="images/analytics.png" alt="Analytics">
+                </picture>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="description">
+                    <ul>
+                    <li>Built data analytics for startups looking to impress, as well as enterprise clients looking to upgrade their capabilities.</li>
+                    <li>More than ten years of experience with google analytics implementations such as GTM.</li>
+                    <li>Utilize industry-standard technologies like rechart.js and d3.js visualization libraries to craft custom-made dynamic charts and allow clients to interact with their data in new ways.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3>E-commerce</h3>
         <div class="experience">
-            <picture>
-                <source srcset="images/analytics.png" media="(max-width: 768px)">
-                <source srcset="images/analytics.png" media="(min-width: 769px)">
-                <img src="images/analytics.png" alt="Analytics">
-            </picture>
-            <div class="description">
-                <p>Built data analytics for both startups looking to impress, as well as enterprise clients looking to upgrade their capabilities.  I have more than ten years of experience with google analytics implementations such as GTM. I use industry standard technologies like rechart.js and d3.js visualization libraries to craft custom-made dynamic charts and allow clients to interact with their data in new ways.</p>
+            <div class="row">
+                <div class="col-12 col-md-8 order-md-2">
+                    <picture>
+                        <source srcset="images/ecommerce.png" media="(max-width: 768px)">
+                        <source srcset="images/ecommerce.png" media="(min-width: 769px)">
+                        <img src="images/ecommerce.png" alt="Experience 3 Image">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4 order-md-1">
+                    <div class="description">
+                        Over fifteen years of experience leading front-end teams in building enterprise level front-ends in Angular, React, and Vue.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -69,29 +104,203 @@
     <section id="portfolio">
         <h2>Portfolio</h2>
         <div class="experience">
-            <h3>E-commerce grocery chain (2024)</h3>
-            <picture>
-                <source srcset="assets/images/grocery_e-com.png" media="(max-width: 768px)">
-                <source srcset="assets/images/grocery_e-com.png" media="(min-width: 769px)">
-                <img src="assets/images/grocery_e-com.png" alt="Grocery E-commerce">
-            </picture>
-            <div class="description">
-                <p>I led a team of five near-shore developers on a new e-commerce project for a major grocery store chain in the Midwest. The front-end stack consisted of Next, React, GraphQL, and the styled-components library for visual layout. Responsibilities included interviewing, hiring, and managing the team, interacting with stakeholders, project managers, quality assurance, and analytics team leaders to drive the scope of work. Additional contributions included recommending architectural solutions and mentoring team members on solutions at a story level in a highly agile environment.  I also contributed to coding stories to create re-usable react components within the client's microservice ecosystem.</p>
+            <h3>Enterprise E-commerce (2024)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/grocery_e-com.png" media="(max-width: 768px)">
+                        <source srcset="images/grocery_e-com.png" media="(min-width: 769px)">
+                        <img src="images/grocery_e-com.png" alt="Grocery E-commerce">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <ul>
+                            <li>Led a team of five developers on a new e-commerce project for a major grocery store chain in the Midwest.</li>
+                            <li>The front-end stack consisted of Next, React, GraphQL, and the styled-components library for visual layout.</li>
+                            <li>Interviewed, hired, and managed the team while interacting with stakeholders, project managers, quality assurance, and analytics team leaders to drive the scope of work.</li>
+                            <li>Recommended architectural solutions and mentored team members at a story level in a highly agile environment.</li>
+                            <li>Contributed to coding stories to create re-usable react components within the client's microservice ecosystem.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <section id="experience3">
-        <h2>E-commerce</h2>
-        <div class="experience">
-            <picture>
-                <source srcset="assets/images/ecommerce.png" media="(max-width: 768px)">
-                <source srcset="assets/images/ecommerce.png" media="(min-width: 769px)">
-                <img src="assets/images/ecommerce.png" alt="Experience 3 Image">
-            </picture>
-            <div class="description">
-                <p>Description of Experience 3. This section provides details about the experience, highlighting key aspects and what was involved.</p>
+            <h3>React and AEM Re-platforming (2023)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/react2.png" media="(max-width: 768px)">
+                        <source srcset="images/react2.png" media="(min-width: 769px)">
+                        <img src="images/react2.png" alt="React and AEM">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <ul>
+                            <li>Led an off-shore front-end team in a re-platforming project in AEM and React for a leading tire manufacturer.</li>
+                            <li>Responsible for architecture as well as working closely with UX and offshore development teams to deliver accessible and responsive designs.</li>
+                            <li>Coded stories in React to create major sections of the new site.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+            <h3>3D E-commerce (2022)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/3d.png" media="(max-width: 768px)">
+                        <source srcset="images/3d.png" media="(min-width: 769px)">
+                        <img src="images/3d.png" alt="React and AEM">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <ul>
+                            <li>Led a near-shore team, a content management resource, and a QA resource to develop and enhance the client’s 3D e-commerce web application.</li>
+                            <li>Created the high-level architecture, front-end architecture, and proof of concepts in Vue.js for specific technical solutions.</li>
+                            <li>Trained new developers, worked with stakeholders on requirements, and lead sprint planning in an agile environment.</li>
+                            <li>Technology stack was in Vuex for state management, Vue.js and Three.js, a browser-native 3D libary.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Tmall Hybrid Phone App (2020)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/phone_project2.png" media="(max-width: 768px)">
+                        <source srcset="images/phone_project2.png" media="(min-width: 769px)">
+                        <img src="images/phone_project2.png" alt="Tmall Mobile App">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <ul>
+                            <li>Responsible the web portion of the front-end development of a new mobile hybrid application for major footware company, using Vue.js, Sass, and Foundation 6.</li>
+                            <li>Worked closely with off-shore resources in China to integrate into the native portion of the application.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Enterprise E-commerce (2018)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/north_face.png" media="(max-width: 768px)">
+                        <source srcset="images/north_face.png" media="(min-width: 769px)">
+                        <img src="images/north_face.png" alt="Retail E-commerce">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <ul>
+                            <li>Updated the visual design of The North Face e-commerce site for the 2018 holiday season using technologies such as IBM WebSphere Commerce, Foundation 6, and Sass CSS Preprocessing</li>
+                            <li>Led a team of two other developers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Enterprise Banking (2018)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/bank2.png" media="(max-width: 768px)">
+                        <source srcset="images/bank2.png" media="(min-width: 769px)">
+                        <img src="images/bank2.png" alt="Enterprise banking">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <ul>
+                            <li>Created a prototype for the Institutional Investor Passport product group for a next generation platform based on Node, Yarn, React.js, Redux, and Redux sagas</li>
+                            <li>Evaluated various node packages such as reactstrap for bootstrap support, react-intl for i18n support, and react-grid-layout for user configurable grid layouts.</li>
+                            <li>Project was handed off to a newly-formed team to implement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Analytics and Visualizations (2016)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/analytics2.png" media="(max-width: 768px)">
+                        <source srcset="images/analytics2.png" media="(min-width: 769px)">
+                        <img src="images/analytics2.png" alt="Analytics and Visualizations">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <p>
+                            I led the front-end team in launching a new data analysis and visualization single page application using technologies such as Angular.js, Twitter Bootstrap, JQuery, D3.js, and Sass CSS Preprocessing to interact with an AWS cloud-based dataset using REST services.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Enterprise E-commerce (2016)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/enterprise_e-commerce2.png" media="(max-width: 768px)">
+                        <source srcset="images/enterprise_e-commerce2.png" media="(min-width: 769px)">
+                        <img src="images/enterprise_e-commerce2.png" alt="Enterprise E-commerce">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                        <p>
+                            I served as the front-end architect for Ford’s international parts e-commerce site.  Front-end technology included HTML5, Bootstrap, Sass CSS Preprocessing, and AngularJS. Site was designed to support multiple languages and countries, as well as having a responsive layout for mobile through large desktop clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Large Sporting Events (2015)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/usopen.png" media="(max-width: 768px)">
+                        <source srcset="images/usopen.png" media="(min-width: 769px)">
+                        <img src="images/usopen.png" alt="Large Sporting Events">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                       <ul>
+                        <li>Responsible for several high-profile new features for the 2015 U.S. Open Golf tournament site. </li>
+                        <li>Used Ajax and JSON to create a real-time score ticker than ran across the top of most of the pages.</li>
+                        <li>Real-time shot-by-shot updates on the leaderboard and the player bio pages.</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Enterprise E-commerce (2012)</h3>
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/united2012.png" media="(max-width: 768px)">
+                        <source srcset="images/united2012.png" media="(min-width: 769px)">
+                        <img src="images/united2012.png" alt="Enterprise E-commerce">
+                    </picture>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="description">
+                       <ul>
+                        <li>Led a team of three other developers to create the layout for the MileagePlus booking engine.  </li>
+                        <li>Multi-language, multi-region e-commerce engine that incorporated side-by-side search by schedule and the ability to use a combination of miles and money.  </li>
+                        <li>Core technologies were HTML5, CSS3, and JQuery, and Ajax</li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -99,12 +308,45 @@
         <h2>About</h2>
         <p>I am a front-end web leader with great experience in agile development, e-commerce, and large scale enterprise application development and maintenance.
           I have hired, led, and managed front-end teams to success! Strong skills in Web Development, Architecture, Management, Web Applications, Analytics, and Accessibility.</p>
-        <p>Hobbies include:
-          <ul>
-            <li>cycling</li>
-            <li>fly-fishing</li>
-            <li>travelling</li>
-          </ul>
+        <h3>Hobbies include:<h3>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h4 class="mt-5">Cycling</h4>
+                </div>
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/cycling2.png" media="(max-width: 768px)">
+                        <source srcset="images/cycling2.png" media="(min-width: 769px)">
+                        <img src="images/cycling2.png" alt="Cycling" class="cycling">
+                    </picture>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 order-md-2">
+                    <h4 class="mt-5">Fly-fishing</h4>
+                </div>
+                <div class="col-12 col-md-8 order-md-1">
+                    <picture>
+                        <source srcset="images/fishing.jpg" media="(max-width: 768px)">
+                        <source srcset="images/fishing.jpg" media="(min-width: 769px)">
+                        <img src="images/fishing.jpg" alt="Fishing">
+                    </picture>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h4 class="mt-5">Traveling</h4>
+                </div>
+                <div class="col-12 col-md-8">
+                    <picture>
+                        <source srcset="images/traveling.jpg" media="(max-width: 768px)">
+                        <source srcset="images/traveling.jpg" media="(min-width: 769px)">
+                        <img src="images/traveling.jpg" alt="Traveling">
+                    </picture>
+                </div>
+            </div>
         </p>
     </section>
 
@@ -112,7 +354,7 @@
         <h2>Contact</h2>
         <p>mhangeril@gmail.com</p>
     </section>
-
+</div>
 
 </body>
 </html>
